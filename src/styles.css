@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Customizing Formio Builder style */
+
+.component-settings .nav>li:nth-child(4) {
+    /* display: none; */
+    /* display: expression(document.getElementsByClassName('lead')[0].textContent=="Text Field Component"? none: block); */
+    width: expression(document.getElementsByClassName('lead')[0].textContent=="Text Field Component"? "800px": "200px");
+}

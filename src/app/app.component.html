@@ -1,0 +1,18 @@
+<form-builder [form]="form" (change)="onChange($event)"></form-builder>
+<div class="well jsonviewer">
+    <pre id="json"><code class="language-json" #json></code></pre>
+</div>
+
+<!-- Render form -->
+<!-- <formio [src]="formSrc" (change)="onRenderChange($event)" (submit)="onSubmit($event)"></formio> -->
+
+<formio [form]="formSrc" (change)="onRenderChange($event)" (submit)="onFormSubmit($event)"></formio>
+
+<!-- <p>Form 2</p>
+
+
+<form-builder [form]="form2" (change)="onForm2Change($event)"></form-builder>
+<div class="well jsonviewer">
+    <pre id="json2"><code class="language-json" #json></code></pre>
+</div>
+<formio [form]="form2Src"></formio> -->
